@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #282c34;
+      background-color: #e74c3c;
       color: white;
       display: flex;
       justify-content: center;
@@ -15,25 +15,28 @@
       height: 100vh;
       margin: 0;
       text-align: center;
+      padding: 10px;
     }
     h2 {
-      font-size: 3em;
-      margin-bottom: 30px;
-      color: #f39c12;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #fff;
       text-transform: uppercase;
       letter-spacing: 3px;
     }
     .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 400px;
     }
     input {
-      padding: 15px;
-      font-size: 1.5em;
-      width: 250px;
-      border: 2px solid #f39c12;
+      padding: 12px;
+      font-size: 1.2em;
+      width: 100%;
+      border: 2px solid #fff;
       border-radius: 5px;
       background: transparent;
       color: white;
@@ -41,21 +44,23 @@
       margin-bottom: 20px;
     }
     button {
-      padding: 15px 30px;
-      font-size: 1.5em;
-      background-color: #f39c12;
-      color: white;
+      padding: 12px 20px;
+      font-size: 1.2em;
+      background-color: #fff;
+      color: #e74c3c;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      width: 100%;
     }
     button:hover {
-      background-color: #e67e22;
+      background-color: #f39c12;
+      color: white;
     }
     input:focus {
       outline: none;
-      border-color: #e67e22;
+      border-color: #f39c12;
     }
   </style>
   <script>
@@ -73,7 +78,6 @@
   <div class="container">
     <h2>Введите пароль для доступа:</h2>
     <input type="password" id="password" placeholder="Пароль">
-    <br>
     <button onclick="checkPassword()">Отправить</button>
   </div>
 </body>
